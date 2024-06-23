@@ -22,6 +22,3 @@ RUN chmod +x /task0/entrypoint.sh
 
 # Run the entrypoint script when the container starts
 ENTRYPOINT ["/task0/entrypoint.sh"]
-
-# Command to run when the container starts
-CMD echo "Hello, World!"
