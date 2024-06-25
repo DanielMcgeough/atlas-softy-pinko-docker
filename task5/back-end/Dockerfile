@@ -8,6 +8,7 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 WORKDIR /app
 COPY api.py /app/api.py
 RUN pip3 install flask
+RUN pip3 install flask-cors
 EXPOSE 5252
 #run the flask web server
 CMD ["python3", "/app/api.py"]

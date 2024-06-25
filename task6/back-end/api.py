@@ -2,9 +2,10 @@
 """ flask web server - with changes to pass pycodestyle, Derek :P """
 
 from flask import Flask
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+cors = CORS(app) # This line gives an error?
 
 @app.route('/api/hello')
 def hello_world():
